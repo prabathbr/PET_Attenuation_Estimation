@@ -385,21 +385,6 @@ train_output_dir = r"/NAC_Dataset/Training_Att"
 validation_input_dir = r"/NAC_Dataset/Validation_NAC"
 validation_output_dir = r"/NAC_Dataset/Validation_Att"
 
-
-
-# List all filenames
-#all_filenames = [f"{i}" for i in range(314, 339) if i not in [314,317,320,323,326,335, 336]]
-
-# Set the split ratio
-#split_ratio = 0.75  # 75% training, 25% validation
-
-# Calculate the split index
-#split_index = int(len(all_filenames) * split_ratio)
-
-# Split the filenames
-#train_filenames = [327,328,329,330,331,332,337] #all_filenames[:split_index]
-#val_filenames = [322,323] #all_filenames[split_index:]
-
 # Create dataset and dataloader
 train_dataset = NiftiDataset(train_input_dir, train_output_dir, sorted(os.listdir(train_input_dir)))
 val_dataset = NiftiDataset(validation_input_dir, validation_output_dir, sorted(os.listdir(validation_input_dir)))
