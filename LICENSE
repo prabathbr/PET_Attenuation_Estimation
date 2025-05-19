@@ -1,4 +1,18 @@
-                    GNU GENERAL PUBLIC LICENSE
+Project: Direct Estimation of Attenuation Information from Sinograms for Positron Emission Tomography Reconstruction
+
+Authors:
+- Prabath Hetti Mudiyanselage, Ruwan Tennakoon, John Thangarajah (RMIT University)
+- Robert Ware (Cyclotek (Aust) Pty Ltd.)
+- Jason Callahan (Melbourne Theranostic Innovation Centre)
+
+Supported by:
+- Cyclotek (Aust) Pty Ltd.
+- Australian Government Research Training Program (RTP) Scholarship
+
+License: GNU General Public License v3.0 (GPLv3)
+
+
+GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
