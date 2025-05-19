@@ -13,7 +13,7 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
 
 - `PET_Evaluation/upsample_predicted_umaps.py`: Upsamples predicted attenuation maps to match the ground truth in both shape and affine matrix.  
   These outputs can then be used with SimPET to perform attenuation correction and generate predicted attenuation-corrected PET images.  
-  One recommended approach is to run a dummy simulation (with simulation time set to 0) using the upsampled maps as input. This will generate new `att.dat` and `rec.att_index` files. These can then replace the corresponding files from the original simulation, after which only the PET image reconstruction step needs to be executed in SimPET.  
+  One recommended approach is to run a dummy simulation (with simulation time set to 0) using the upsampled maps as input. This will generate new `att.dat` and `rec.att_index` files. These can then replace the corresponding files from the original simulation, after which only the PET image reconstruction step (set number of divisions as 1 and delete `postprocessing.log`) needs to be executed in SimPET.  
   Please refer to the [SimPET parameter reference](https://github.com/txusser/simpet) for detailed configuration guidance.
 
 
