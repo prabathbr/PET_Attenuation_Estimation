@@ -23,7 +23,7 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
 
 2. `02_convert_to_mni.py` 
    - Sets the origin and converts PET images to the MNI coordinate system.
-   - ✅ Requires:
+   - Requires:
      - MATLAB
      - SPM12 Toolbox ([SPM12 download](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/))
      - Python-MATLAB engine
