@@ -1,0 +1,78 @@
+acceptance_angle: 90.0
+coherent_scatter_detector: 'false'
+coherent_scatter_object: 'false'
+dir_data_path: /mnt/simpet_disk/simpet/Data/dataset
+dir_results_path: /mnt/simpet_disk/simpet/Results_SSD/dataset_gen
+dir_simset: /mnt/simpet_disk/simpet/include/SimSET/2.9.2
+dir_stir: /mnt/simpet_disk/simpet/include/STIR/install
+forced_detection: 'true'
+forced_non_absortion: 'true'
+interactive_mode: 0
+isotope: f18
+matlab_mcr_path: ''
+minimum_energy: 350.0
+non_colinearity: 'true'
+params:
+  act_map: template_actMap.nii
+  add_randoms: 0
+  att_map: analysis_attMap.nii
+  center_slice: 0
+  detlistmode: 0
+  divisions: 30
+  do_reconstruction: 1
+  do_simulation: 1
+  maximumIteration: 1
+  model_type: cylindrical
+  output_dir: template_0.6_300_norandom
+  patient_dirname: template
+  phglistmode: 0
+  photons: 0
+  sampling_photons: 10000000
+  scanner:
+    add_noise: 0
+    analytic_randoms_corr_factor: 0.2
+    analytic_scatt_corr_factor: 0.15
+    analytical_att_correction: 0
+    average_doi: 0.84
+    axial_fov: 15.7
+    coincidence_window: 11.7
+    crystal_thickness: 3
+    energy_resolution: 16
+    inter_iteration_filter: 0
+    max_energy_window: 675
+    max_segment: 23
+    min_energy_window: 375
+    num_aa_bins: 210
+    num_rings: 24
+    num_td_bins: 249
+    numberOfIterations: 32
+    numberOfSubsets: 7
+    psf_value: 0
+    recons_type: OSEM3D
+    savingInterval: 8
+    scanner_name: GE Discovery ST
+    scanner_radius: 44.31
+    simset_material: 10
+    stir_randoms_corr_smoothing: 0
+    stir_recons_att_corr: 0
+    stir_scatt_corr_smoothing: 0
+    stir_scatt_simulation: 0
+    subiteration_interval: 4
+    transaxial_crystal_size: 0.63
+    x_dir_filter_FWHM: 1.5
+    xyOutputSize: 128
+    y_dir_filter_FWHM: 1.5
+    zOutputSize: 47
+    zOutputVoxelSize: 3.27
+    z_crystal_size: 0.63
+    z_dir_filter_FWHM: 3
+    zoomFactor: 1.55
+  sim_type: SimSET
+  simulation_environment: 0
+  simulation_time: 300
+  total_dose: 0.6
+point_source_voxels: 'false'
+positron_range: 'true'
+spm_path: ''
+stratification: 'true'
+weight_window_ratio: 1.0
