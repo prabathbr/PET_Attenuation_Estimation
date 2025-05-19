@@ -10,3 +10,32 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
 
 - `PET_Evaluation/`  
   Contains scripts to evaluate PET reconstructions that were attenuation corrected using the predicted μMaps with our model.
+
+- `PET_Evaluation/SUVR_Calc/`
+  Contains scripts to convert both ground truth and predicted attenuation-corrected PET images into SUVR (Standardized Uptake Value Ratio) images aligned to the Montreal Neurological Institute (MNI) coordinate system.
+
+### 📂 SUVR_Calc Contents
+
+1.`01_mask_gen.py`  
+   - Generates SUVR reference region masks, based on the cerebellum (preset regions).
+   - Uses the AAL3 atlas for anatomical region mapping.  
+   - 🔗 Download AAL3 atlas and set path in script: [https://www.gin.cnrs.fr/en/tools/aal/](https://www.gin.cnrs.fr/en/tools/aal/)
+
+2. `02_convert_to_mni.py` 
+   - Sets the origin and converts PET images to the MNI coordinate system.
+   - ✅ Requires:
+     - MATLAB
+     - SPM12 Toolbox ([SPM12 download](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/))
+     - Python-MATLAB engine
+     - Place the helper script `B_nii_setOriginCOM.m` in the same directory:  
+       🔗 [GitHub Source](https://github.com/GIGA-Consciousness/COFFEE_BREAK_FDGPET/blob/main/private/B_nii_setOriginCOM.m)
+
+3. `03_calculate_SUVR.py` 
+   - Computes SUVR values using the generated masks and MNI-aligned PET images.
+  
+### 📌 Notes
+
+- Run the scripts **in order**: 01 → 02 → 03.
+- Ensure consistent file naming between ground truth and predicted image files.
+- SUVR values are computed relative to the defined reference mask region (e.g., cerebellum).
+- These output files can be used with 'PET_calc_mse_ssim.py' file to obtain MSE and SSIM statistics. 
