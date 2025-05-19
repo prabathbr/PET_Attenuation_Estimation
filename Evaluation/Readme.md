@@ -28,7 +28,7 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
      - SPM12 Toolbox ([SPM12 download](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/))
      - Python-MATLAB engine
      - Place the helper script `B_nii_setOriginCOM.m` in the same directory:  
-       🔗 [GitHub Source](https://github.com/GIGA-Consciousness/COFFEE_BREAK_FDGPET/blob/main/private/B_nii_setOriginCOM.m)
+       🔗 [GIGA-Consciousness COFFEE_BREAK_FDGPET Repository](https://github.com/GIGA-Consciousness/COFFEE_BREAK_FDGPET/blob/main/private/B_nii_setOriginCOM.m)
 
 3. `03_calculate_SUVR.py` 
    - Computes SUVR values using the generated masks and MNI-aligned PET images.
