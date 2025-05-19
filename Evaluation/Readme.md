@@ -11,6 +11,10 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
 - `PET_Evaluation/`  
   Contains scripts to evaluate PET reconstructions that were attenuation corrected using the predicted μMaps with our model.
 
+- `PET_Evaluation/upsample_predicted_umaps.py`: Upsamples predicted attenuation maps to match the ground truth in shape and affine matrix.
+  These outputs then can be used with SimPET to conduct attunation correction to generate predicted attenuation-corrected PET images.
+  One way to do this is run a dummy simulation with simulation time = 0 using these as simulator input, obtain `att.dat` and `rec.att_index` files for new attenuation map, then replace original simulation's same files and only conduct a PET image reconstruction with SimPET. Please refer to SimPET parameter reference for more information.  
+
 - `PET_Evaluation/SUVR_Calc/`
   Contains scripts to convert both ground truth and predicted attenuation-corrected PET images into SUVR (Standardized Uptake Value Ratio) images aligned to the Montreal Neurological Institute (MNI) coordinate system.
 
@@ -38,4 +42,4 @@ These evaluations are conducted at both the attenuation map (μMap) level and th
 - Run the scripts **in order**: 01 → 02 → 03.
 - Ensure consistent file naming between ground truth and predicted image files.
 - SUVR values are computed relative to the defined reference mask region (e.g., cerebellum).
-- These output files can be used with 'PET_calc_mse_ssim.py' file to obtain MSE and SSIM statistics. 
+- These output files can be used with 'PET_Evaluation/PET_calc_mse_ssim.py' file to obtain MSE and SSIM statistics. 
