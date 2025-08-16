@@ -10,6 +10,7 @@ This repository contains the official code for the IJCAI 2025 paper:
 
 - **Conference**: [IJCAI 2025](https://2025.ijcai.org/special-track-on-ai-and-social-good-papers/)
 - **Paper ID**: 8714
+- **Preprint** : [Preprint Link](https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/8714.pdf)
 - **Authors**:  
   - Prabath Hetti Mudiyanselage (RMIT University)  
   - Ruwan Tennakoon (RMIT University)  
