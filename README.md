@@ -8,7 +8,7 @@ This repository contains the official code for the IJCAI 2025 paper:
 
 ## 📚 Paper Information
 
-- **Conference**: [IJCAI 2025](https://2025.ijcai.org/special-track-on-ai-and-social-good-papers/)
+- **Conference**: [IJCAI 2025](https://2025.ijcai.org)
 - **Proceedings** : [IJCAI 2025 Proceedings](https://www.ijcai.org/proceedings/2025/1075)
 - **Authors**:  
   - Prabath Hetti Mudiyanselage (RMIT University)  
